@@ -138,17 +138,3 @@ class Node {
     this.nextNode = nextNode;
   }
 }
-
-let list1 = new LinkedList();
-list1.append(0);
-list1.append(1);
-list1.append(2);
-list1.append(3);
-list1.append(4);
-list1.append(5);
-
-console.log(list1);
-
-list1.removeAt(0);
-
-console.log(list1.toString());
