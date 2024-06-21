@@ -125,8 +125,9 @@ class LinkedList {
     }
 
     if (index !== 0) {
+      if (nextNode === null) this.tail = previousNode;
       previousNode.nextNode = nextNode;
-    } else {
+    } else if (index === 0) {
       this.head = headNode.nextNode;
     }
   }
